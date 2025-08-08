@@ -7,11 +7,11 @@ import {
   Shield,
   Globe,
   Download,
-  ExternalLink,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Portfolio() {
   return (
@@ -29,7 +29,7 @@ export default function Portfolio() {
             <div className="flex-shrink-0">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                <img
+                <Image
                   src="images/ayesu.jpg"
                   alt="Aye Su Hlaing Pyae - Professional Photo"
                   className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 backdrop-blur-sm"
@@ -404,12 +404,11 @@ export default function Portfolio() {
             Ready to Contribute
           </h2>
           <p className="text-xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss how my experience in information processing and
+            Let&#39;s discuss how my experience in information processing and
             cross-cultural communication can benefit your content moderation
             team.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="mail:to"></a>
             <Button
               asChild
               size="lg"
